@@ -1,0 +1,33 @@
+T3D Awesomium Integration Pack - Important Update
+========================================================
+by Stefan Lundmark · 01/19/2014 (7:33 pm)
+
+We've released an important update to the T3D Awesomium Integration Pack which contains critical bug fixes, some optimizations and other updates. It's highly recommended that you update.
+
+Below are the list of changes:
+
+	- Updated to T3D MIT 3.5.
+	- Corrected some timing issues in AwContext that would make webpages show up as blank in rare conditions.
+	- AwGuis now behave correctly in the GUI Editor.
+	- AwGuis unload on sleep by default, but this behaviour can be bypassed by setting the appropriate [li]Blank URLs will no longer crash the application.
+	- The pack now accepts more types of commonly typed addresses, like without the protocol (http://).
+	- Various optimizations.
+
+Source: http://www.garagegames.com/community/blogs/view/22556´
+
+
+T3D Awesomium Integration Pack Update and Sale
+========================================================
+by Stefan Lundmark · 02/10/2013 (3:10 pm)
+
+The T3D Awesomium Integration Pack, which lets you embed HTML/Flash in your games; has received an update.
+
+Details of the update:
+
+    A new demo showing the bridge between TorqueScript and JavaScript when passing around data.
+    You can now set a customized cursor for each AwTextureTarget.
+    Fixed a bug where AwTextureTargets would load their webpages and start rendering internally, even though the target itself wasn't being used anywhere. This was not intended, and AwTextureTargets now only consume resources if they're in use.
+    Fixed a crash that could occur when leaving a mission while focusing a AwTextureTarget and then entering a new one.
+    Added a new property to AwGui named "UnloadOnSleep" which is a boolean value that lets you control if the AwGui should unload its resources completely when it goes asleep, as opposed to just pausing its rendering. This can be used to limit the amount of memory used when you got lots of AwGuis.
+
+Source: http://www.garagegames.com/community/blogs/view/22169
